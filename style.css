@@ -17,6 +17,15 @@ h2 {
     color: rgb(99, 83, 83);
 }
 
+.logo {
+    display: inline-flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
 header {
     top: 0;
     position: fixed;
@@ -38,7 +47,7 @@ header {
 /* Desktop Navigation */
 nav {
     display: flex;
-    margin-right: 50px;
+    margin-right: 100px;
     gap: 20px;
 }
 
@@ -216,6 +225,12 @@ footer .icons img:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .logo {
+        margin-left: 0;
+        font-size: 20px;
+        gap: 10px;
+    }
+
     nav {
         display: none;
         flex-direction: column;
@@ -234,6 +249,7 @@ footer .icons img:hover {
     nav.show {
         display: flex;
         animation: fadeIn 0.3s ease;
+        margin-right: 40px;
     }
 
     nav a {
@@ -242,7 +258,7 @@ footer .icons img:hover {
 
     /* Show hamburger on mobile */
     .hamburger {
-        margin-right: 40px;
+        margin-right: 50px;
         display: block;
     }
 
