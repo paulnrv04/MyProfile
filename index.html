@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">My Portfolio</div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Hello, I'm Paul Nathan R. Valeña</h1>
+        <p>Welcome to my personal website!</p>
+        <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">View My Works</button><br><br>
+    </div>
+
+    <picture>
+        <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
+        <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
+        <img src="assets/idphoto.jpg" alt="Profile Photo" width="170" height="170">
+    </picture>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about"> <br>
+    <h2>About Me</h2>
+    <p data-role="student">
+        I am a 3rd year College Student taking the program BS Information Technology <br>
+        at Technological University of the Philippines - Manila.
+    </p> <br>
+
+    <div class="section-grid">
+        <div class="section-header">
+        <h2>Personal Information</h2>
+        <p data-role="student">
+            <b>Name</b>: Paul Nathan R. Valeña <br>
+            <b>Nickname</b>: Paul <br>
+            <b>Age</b>: 20 <br>
+            <b>Birthday</b>: 08/04/2005 <br>
+            <b>Address</b>: Tondo, Manila
+        </p>
+        </div>
+
+        <div class="section-header">
+        <h2>Education</h2>
+        <p data-role="student">
+            <b>Elementary</b>: Plaridel Elementary School (2011-2017)<br>
+            <b>Junior High School</b>: Cayetano Arellano High School (2017-2021)<br>
+            <b>Senior High School</b>: Polytechnic University of the Philippines (2021-2023)<br>
+            <b>College</b>: Technological University of the Philippines (2023-Present)
+        </p>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- WORKS SECTION -->
+<section class="section" id="works"> <br>
+    <h2>My Sample Works</h2> <br>
+
+    <div class="works-grid">
+        <div class="work-item">
+            <img src="assets/work1.jpg" alt="Scam ATM">
+            <h2>Scam ATM</h2>
+            <p>C++ Project that simulates an ATM Bank. Flash Drive acting as the Credit Card</p> <br>
+            <a class="btn" href="https://github.com/paulnrv04/CPP_ATM-Simulation" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="work-item">
+            <img src="assets/work2.jpg" alt="Virtual Cafe">
+            <h2>Virtual Cafe</h2>
+            <p>Java Project that simulates an E-commerce Cafe using MySQL Workbench</p> <br>
+            <a class="btn" href="https://github.com/paulnrv04/CRUD_Project-VirtualCafe" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="work-item">
+            <img src="assets/work3.jpg" alt="Library Management System">
+            <h2>Library Management System</h2>
+            <p>PHP Project for a Simple Library Database System using phpMyAdmin</p> <br>
+            <a class="btn" href="https://github.com/paulnrv04/Group_4-LMS_Code_Query" target="_blank">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
+<hr>
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact"> <br>
+    <h2>My Contact Information</h2> <br>
+
+    <div class="contact-grid">
+        <div>
+            <h2>Get in Touch with me</h2>
+            <p><strong>Email:</strong> paulnrv04@gmail.com</p>
+            <p><strong>Phone:</strong> 09275962884</p>
+            <p><strong>Location:</strong> 1268 Dinalupihan st. Tondo, Manila</p>
+        </div>
+
+        <div class="contact-item">
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+                <label for="subject">Email Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required>Input Message Here</textarea> <br>
+                <button class="btn" type="submit" action="mailto:paulnrv04@email.com">Submit</button>
+                <button class="btn" type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Connect with Me!</p>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
+        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
+        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
+        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
+        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
+    </div>
+    <p>© 2025 Paul's Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
